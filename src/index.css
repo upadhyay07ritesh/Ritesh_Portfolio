@@ -1,0 +1,185 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply text-white antialiased;
+    font-feature-settings: "kern" 1, "liga" 1;
+    background-color: #0B0F19;
+  }
+  
+  * {
+    @apply border-gray-800;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+html, body, * {
+  cursor: none !important;
+}
+
+/* Allow text selection cursor where needed */
+input, textarea {
+  cursor: text !important;
+}
+
+
+/* Custom Scrollbar - Premium Dark Theme */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(139, 92, 246, 0.3) transparent;
+}
+
+*::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    180deg,
+    rgba(139, 92, 246, 0.4) 0%,
+    rgba(59, 130, 246, 0.4) 50%,
+    rgba(139, 92, 246, 0.4) 100%
+  );
+  border-radius: 10px;
+  border: none;
+  transition: background 0.2s ease;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(
+    180deg,
+    rgba(139, 92, 246, 0.6) 0%,
+    rgba(59, 130, 246, 0.6) 50%,
+    rgba(139, 92, 246, 0.6) 100%
+  );
+}
+
+*::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+.snap-container {
+  scroll-snap-type: y mandatory;
+}
+
+.snap-section {
+  scroll-snap-align: start;
+}
+
+@keyframes gradient {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+@layer utilities {
+  /* Cursor glow gradient - uses section accent color */
+  .cursor-glow-gradient {
+    background: radial-gradient(
+      circle at center,
+      rgba(var(--cursor-accent, 168, 85, 247), 0.6) 0%,
+      rgba(var(--cursor-accent, 168, 85, 247), 0.35) 25%,
+      rgba(var(--cursor-accent, 168, 85, 247), 0.15) 45%,
+      transparent 70%
+    );
+  }
+
+  /* Cursor-driven grid background - visible ONLY inside cursor glow */
+  .bg-dev-grid {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+
+  pointer-events: none;
+  z-index: -1;
+
+  /* PURE DARK BASE */
+  background-color: #0b0f19;
+
+  /* GRID DEFINITION (BUT HIDDEN BY MASK) */
+  background-image:
+    linear-gradient(
+      to right,
+      rgba(var(--grid-accent), 0.14) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      to bottom,
+      rgba(var(--grid-accent), 0.14) 1px,
+      transparent 1px
+    );
+
+  background-size: 64px 64px;
+
+  /* 🔥 CURSOR-ONLY VISIBILITY */
+  -webkit-mask-image: radial-gradient(
+    circle var(--cursor-radius, 0px)
+      at var(--cursor-x, -100px) var(--cursor-y, -100px),
+    rgba(0, 0, 0, 1),
+    transparent 70%
+  );
+
+  mask-image: radial-gradient(
+    circle var(--cursor-radius, 0px)
+      at var(--cursor-x, -100px) var(--cursor-y, -100px),
+    rgba(0, 0, 0, 1),
+    transparent 70%
+  );
+
+  transition: background-image 0.2s ease;
+}
+
+  
+  /* Grid layer - visible only inside cursor glow radius */
+  .bg-dev-grid::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+  
+    /* Grid lines */
+    background:
+      linear-gradient(
+        to right,
+        rgba(var(--grid-accent), 0.12) 1px,
+        transparent 1px
+      ),
+      linear-gradient(
+        to bottom,
+        rgba(var(--grid-accent), 0.12) 1px,
+        transparent 1px
+      );
+    background-size: 64px 64px;
+    background-attachment: fixed;
+  
+    /* Radial mask centered on cursor - grid visible ONLY inside glow */
+    mask-image: radial-gradient(
+      circle var(--cursor-radius) at var(--cursor-x) var(--cursor-y),
+      rgba(0, 0, 0, 1) 0%,
+      rgba(0, 0, 0, 0.7) 50%,
+      rgba(0, 0, 0, 0) 100%
+    );
+    -webkit-mask-image: radial-gradient(
+      circle var(--cursor-radius) at var(--cursor-x) var(--cursor-y),
+      rgba(0, 0, 0, 1) 0%,
+      rgba(0, 0, 0, 0.7) 50%,
+      rgba(0, 0, 0, 0) 100%
+    );
+  
+    /* Subtle brightness increase inside glow for interactive feel */
+    filter: brightness(1.1);
+  }  
+}
