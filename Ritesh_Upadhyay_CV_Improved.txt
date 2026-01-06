@@ -1,0 +1,61 @@
+Ritesh Upadhyay
+Indore, Madhya Pradesh
++91-9302010199 | upadhyay07ritesh@gmail.com |
+linkedin.com/in/ritesh-upadhyay-49952124a |
+github.com/upadhyay07ritesh
+
+Objective
+Results-driven MERN Stack Developer with hands-on project experience in React.js, Node.js, Express, and MongoDB. Seeking to leverage strong technical foundations and problem-solving abilities to contribute to innovative full-stack solutions in a dynamic development environment. Committed to continuous learning and delivering high-quality, scalable web applications.
+
+Skills
+Technical Skills:
+    Frontend Development: React.js, Next.js, Tailwind CSS, Shadcn UI, HTML5, CSS3, JavaScript
+    Backend Development: Node.js, Express.js, REST APIs
+    Database Management: MongoDB, MySQL
+    Version Control: Git, GitHub
+    Development Tools: VS Code, Postman
+    Web Design Principles: Responsive Design, UI/UX Best Practices
+
+Soft Skills:
+    Communication & Team Collaboration
+    Leadership & Project Coordination
+    Time Management & Problem Solving
+    Quick Learning & Adaptability
+
+Projects
+GreenArcCommune LMS (Ongoing Project)
+Duration: 01/09/2025 - Present
+Tech Stack: React.js, Node.js, Express, MongoDB, Git
+Problem: Green Arc Commune needed a centralized system to manage student authentication, course delivery, and administrative workflows efficiently.
+Solution: Developed a comprehensive Learning Management System using MERN stack architecture, implementing secure user authentication, course management modules, and administrative dashboards.
+Contribution: Designed and implemented core frontend components with React.js, built RESTful APIs with Express.js, established MongoDB schemas for data management, and maintained version control with Git for collaborative development.
+
+Green Arc Commune (greenarccommune.com)
+Duration: 07/08/2025 - 14/08/2025
+Technologies: HTML, CSS, JavaScript
+Problem: The organization required a professional web presence to effectively showcase their trading courses and attract potential students.
+Solution: Created a responsive, user-friendly company website featuring course catalogs, landing pages, and contact information optimized for various devices.
+Contribution: Developed the complete frontend interface, implemented responsive design principles, ensured cross-browser compatibility, and optimized the user experience for improved engagement and accessibility.
+
+Education
+Shri Vaishnav Vidhyapeeth Vishwavidyalaya
+Bachelor of Computer Applications
+CGPA: 7.3/10
+2022-2025
+
+Shri Cloth Market Vaishnav Higher Secondary School
+Class XII | Percentage: 66.7%
+2021-2022
+
+Shri Cloth Market Vaishnav Higher Secondary School
+Class X | Percentage: 61%
+2019-2020
+
+Certifications
+MERN Stack Training (Ongoing) - Anudip Foundation
+NPTEL Certification: The Joy of Computing Using Python - IIT Madras (Score: 73%)
+
+Interests
+Converting UI/UX designs into responsive web applications
+Participating in social and community development activities
+Exploring emerging web technologies and best practices

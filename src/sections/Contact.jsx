@@ -61,7 +61,8 @@ export default function Contact() {
           whileInView="visible"
           viewport={{ once: true }}
         >
-          Quick response. Clear communication. No confusion.
+          Open to Full Stack Developer roles, internships, and freelance opportunities.
+          Quick response and clear communication guaranteed.
         </motion.p>
         
         <motion.p

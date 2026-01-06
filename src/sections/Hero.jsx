@@ -19,9 +19,9 @@ const slideUp = {
 export default function Hero() {
   const ref = useRef(null);
   const roles = [
-    "MERN Stack Engineer",
-    "Scalable System Builder",
-    "Problem-Solving Developer",
+    "Full Stack Developer",
+    "MERN Stack Developer", 
+    "React.js Developer"
   ];
 
   const [roleIndex, setRoleIndex] = useState(0);
@@ -133,7 +133,7 @@ export default function Hero() {
                 custom={2}
                 className="text-xl font-medium text-white/90"
               >
-                Turning complex ideas into scalable software.
+                Building user-friendly, scalable MERN applications.
               </motion.p>
 
               {/* description */}
@@ -144,9 +144,8 @@ export default function Hero() {
                 custom={3}
                 className="text-base md:text-lg text-gray-400 leading-relaxed"
               >
-                I build high-performance web systems using MERN —
-                architected for scale, security, and real-world usage.
-                My focus is clean code, solid architecture, and long-term maintainability.
+                Results-driven MERN Stack Developer with hands-on project experience in React.js, Node.js, Express, and MongoDB. 
+                Committed to continuous learning and delivering high-quality, scalable web applications.
               </motion.p>
 
               {/* CTAs */}

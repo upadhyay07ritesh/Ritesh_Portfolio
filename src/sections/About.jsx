@@ -2,10 +2,10 @@ import Section from '../components/Section'
 import { motion } from 'framer-motion'
 
 const problems = [
-  'Slow or unreliable web applications',
-  'Unstructured backend & APIs',
-  'Poor authentication & security flow',
-  "Codebases that don't scale"
+  'Inefficient web application performance',
+  'Unstructured backend architecture and APIs',
+  'Poor user authentication and security implementation',
+  'Codebases that lack scalability and maintainability'
 ]
 
 const fadeUp = {
@@ -93,9 +93,9 @@ export default function About() {
               whileInView="visible"
               viewport={{ once: true }}
             >
-              I solve these challenges with clean, scalable MERN architecture.
-              Every system I build is designed to grow with your business —
-              not hold it back.
+              I solve these challenges with clean, scalable MERN stack architecture.
+              Every system I build focuses on user-friendly design, security, and long-term maintainability.
+              My continuous learning mindset ensures I stay current with industry best practices.
             </motion.p>
 
             <motion.div
@@ -110,7 +110,7 @@ export default function About() {
                 Approach
               </p>
               <p className="text-base text-gray-400 leading-relaxed font-light">
-                Production-first mindset. Code that lasts. Systems that scale.
+                Problem-solving mindset. Clean code practices. User-focused development.
               </p>
             </motion.div>
           </motion.div>
